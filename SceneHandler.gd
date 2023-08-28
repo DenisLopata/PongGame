@@ -1,6 +1,5 @@
 extends Node2D
 
-##@onready var gameScene := $GameScene as GameScene
 #@onready var gameScene := $GameScene
 #func _ready():
 #	load_main_menu()
