@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtqjerman28dy"]
+
+[ext_resource type="Script" path="res://Scenes/MainScenes/Misc/GameSpeed.gd" id="1_2tola"]
+
+[node name="GameSpeed" type="Timer"]
+script = ExtResource("1_2tola")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdnhsbc2bo7po"]
+
+[ext_resource type="Script" path="res://Scenes/MainScenes/Entities/paddle.gd" id="1_qa1a5"]
+[ext_resource type="Texture2D" uid="uid://cj2v22m4a3qds" path="res://Assets/Environment/Props/squareBlue.png" id="2_3m2bo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ko6uq"]
+
+[node name="Player" type="Area2D"]
+position = Vector2(200, 400)
+script = ExtResource("1_qa1a5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_3m2bo")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ko6uq")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
