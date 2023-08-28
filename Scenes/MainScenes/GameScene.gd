@@ -12,6 +12,4 @@ func _ready():
 #func game_start():
 #	print("start")
 
-#func _on_scene_handler_game_start():
-#	print("start")
 
